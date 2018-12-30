@@ -6,54 +6,53 @@
    */
 
 // ======== OBJECTS DEFINITIONS ========
-// Define your objects here
-const woman ={
-    species:'human',
-    name:'Nika',
-    legs:2,
-    hands:2,
-    gender: 'female',
-    saying:'I love my cat',
-};
-const man = {
-    species: 'human',
-    name:'Kurt',
-    legs:2,
-    hands:2,
-    gender:'male',
-    saying:'I love my dog',
-};
-const dog = {
-    species: 'dog',
-    name: 'Grey',
-    legs: 4,
-    hands : 0,
-    gender:'male',
-    saying: 'wooooof',
-};
-const cat = {
-    species: 'cat',
-    name: 'Assol',
-    legs: 4,
-    hands: 0,
-    gender: 'female',
-    saying: 'murrr',
-};
 
-const catwoman ={
-    species:'catwoman',
-    name:'Catwoman',
-    legs:2,
-    hands:2,
-    gender:'female',
-    saying: cat.saying,
+class Inhabitant {
+    constructor(species, name, gender, legs, hands, saying) {
+        this.species = species;
+        this.name = name;
+        this.gender = gender;
+        this.legs = legs;
+        this.hands = hands;
+        this.saying = saying;
+    }
 }
+
+class Woman extends Inhabitant {
+    constructor(species, name, gender, saying, legs, hands) {
+        super(...arguments);
+    }
+}
+
+class Man extends Inhabitant {
+    constructor(species, name, gender, saying, legs, hands) {
+        super(...arguments);
+    }
+}
+
+class Dog extends Inhabitant {
+    constructor(species, name, gender, saying, legs, hands) {
+        super(...arguments);
+    }
+}
+
+class Cat extends Inhabitant {
+    constructor(species, name, gender, saying, legs, hands) {
+        super(...arguments);
+    }
+}
+
+const inhabitants = [
+    new Woman('human', 'Nika', 'female', 'I love my cat', 2, 2),
+    new Man('human', 'Kurt', 'male', 'I love my dog', 2, 2),
+    new Dog('dog', 'Grey', 'male', 'wooooof', 4, 0),
+    new Cat('cat', 'Assol', 'female', 'murrr', 4, 0)
+];
 
 function inhabitantToString(obj){
     return ['<em>' + obj.species + '</em>', '<strong>' + obj.name + '</strong>', obj.gender, obj.legs, obj.hands, obj.saying].join ('; ');
 }
-// ======== OUTPUT ========
 
-[dog, cat, woman, man, catwoman].forEach(inhabitant =>
+inhabitants.forEach(inhabitant =>
     print(inhabitantToString(inhabitant))
 );
