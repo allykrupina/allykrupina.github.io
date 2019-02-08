@@ -53,7 +53,8 @@ a {
                 border-radius: 3px;
         outline: none; }
       .navigation-list .list-item .apps-input {
-        display: none; }
+        opacity: 0;
+        position: absolute; }
       .navigation-list .list-item .apps-label .apps-icon {
         width: 20px;
         height: 20px;
@@ -114,7 +115,8 @@ a {
             -webkit-flex-wrap: wrap;
                 -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
-            padding: 15px 20px; }
+            padding: 15px 20px;
+            overflow: overlay; }
             .navigation-list .list-item .apps-popup .wrapper .apps-popup-block .popup-item {
               width: 33%;
               -webkit-box-align: center;
@@ -142,18 +144,28 @@ a {
           .navigation-list .list-item .apps-popup .wrapper .additional-items {
             display: none; }
         .navigation-list .list-item .apps-popup .more-apps {
-          display: none; }
+          opacity: 0;
+          position: absolute; }
+          .navigation-list .list-item .apps-popup .more-apps:focus + label {
+            -webkit-box-shadow: 0 0 0 3px #7bb0ff;
+                    box-shadow: 0 0 0 3px #7bb0ff;
+            outline: none; }
           .navigation-list .list-item .apps-popup .more-apps:checked ~ .additional-items {
             display: -webkit-box;
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex; }
           .navigation-list .list-item .apps-popup .more-apps:checked ~ .more-button {
-            height: 1px;
-            margin-bottom: 20px;
+            opacity: 0;
             overflow: hidden;
-            width: 80%;
             display: block;
+            margin: 0 auto;
+            pointer-events: none; }
+          .navigation-list .list-item .apps-popup .more-apps:checked ~ .more-button-line {
+            display: block;
+            width: 90%;
+            border-top: 1px solid #ddd;
+            height: 1px;
             margin: 0 auto; }
         .navigation-list .list-item .apps-popup .more-button {
           display: -webkit-box;
@@ -175,7 +187,6 @@ a {
           cursor: pointer;
           -webkit-box-shadow: 0 -10px 20px #fff;
                   box-shadow: 0 -10px 20px #fff;
-          opacity: 1;
           border: 1px solid #f5f5f5; }
           .navigation-list .list-item .apps-popup .more-button:hover {
             border: 1px solid #ccc; }
