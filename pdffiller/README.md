@@ -1,2 +1,2 @@
-# [Demo](https://allykrupina.github.io/pdffiller/index.html)
+# [Demo](https://allykrupina.github.io/pdffiller/)
 ## pdffiller js-school test 
