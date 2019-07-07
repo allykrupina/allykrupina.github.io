@@ -1,0 +1,90 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main{
+  background: url('assets/wallpaper.png');
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  position: relative;
+}
+.main:before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+}
+.header-title{
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+}
+.header-donation{
+  padding: 0 15px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: #fff;
+  background: #be0c07;
+  text-decoration: none;
+  line-height: 40px;
+  position: relative;
+  transition: 0.3s;
+}
+.header-donation:hover{
+  opacity: 0.8;
+}
+.main-list{
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.main-list-track{
+  position: relative;
+  width: 20%;
+  padding: 0 2%;
+  align-items: flex-start;
+  color: #fff;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.main-list-track:hover{
+  opacity: 0.5;
+}
+
+.track-image{
+  width: 60%;
+  border-radius: 20px;
+}
+
+.track-artist{
+  font-size: 10px;
+}
+.track-name{
+  margin: 5px 0;
+  font-size: 13px;
+}
+.track-price{
+  font-size: 12px;
+  text-transform: uppercase;
+}
