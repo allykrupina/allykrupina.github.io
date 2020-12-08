@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.337bf469.chunk.css",
+    "main.js": "/static/js/main.15dfcad1.chunk.js",
+    "main.js.map": "/static/js/main.15dfcad1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.296b0f5e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.296b0f5e.js.map",
+    "static/js/2.cf6388a8.chunk.js": "/static/js/2.cf6388a8.chunk.js",
+    "static/js/2.cf6388a8.chunk.js.map": "/static/js/2.cf6388a8.chunk.js.map",
+    "static/js/3.7f4c43f7.chunk.js": "/static/js/3.7f4c43f7.chunk.js",
+    "static/js/3.7f4c43f7.chunk.js.map": "/static/js/3.7f4c43f7.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.337bf469.chunk.css.map": "/static/css/main.337bf469.chunk.css.map",
+    "static/js/2.cf6388a8.chunk.js.LICENSE.txt": "/static/js/2.cf6388a8.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/static/media/officer.3e8a879c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.296b0f5e.js",
+    "static/js/2.cf6388a8.chunk.js",
+    "static/css/main.337bf469.chunk.css",
+    "static/js/main.15dfcad1.chunk.js"
+  ]
+}
